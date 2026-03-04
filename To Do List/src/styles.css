@@ -1,0 +1,104 @@
+/* Reset  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color:wheat;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Main Container */
+#root {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin: 20px 0;
+  color: black;
+}
+
+ /* Form */
+.new-item-form {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid darkgray;
+  font-size: 14px;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: purple;
+}
+
+ /* Buttons */
+.btn {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+.btn-danger {
+  background-color: red;
+  margin-left: 10px;
+}
+
+.btn-danger:hover {
+  background-color: darkred;
+}
+
+/* List */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: whitesmoke;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid darkgray;
+}
+
+/* ToDO Completed */
+.list li input:checked + span {
+  text-decoration: line-through;
+  color: gray;
+}
